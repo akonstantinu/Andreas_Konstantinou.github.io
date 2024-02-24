@@ -164,7 +164,7 @@ bin.</p>
   <h3>Effects Of Dark Matter Core On The Rotating Neutron Star’s Structural Universal
 Relations (Not published yet)</h3>
   <h4>Caption</h4>
-  <p>eutron stars represent unique laboratories, offering insights into the physics of supranuclear-density matter 
+  <p>Neutron stars represent unique laboratories, offering insights into the physics of supranuclear-density matter 
 and serving as potential hosts for dark matter. This study explores the impact of dark matter cores on rapidly rotating 
 neutron stars through the two-fluid approximation, assuming minimal interaction between baryonic matter and dark matter. 
 The investigation employs phenomenological models for fermionic and bosonic dark matter, revealing that universal relations 
@@ -244,36 +244,7 @@ The photo at the end of this website is a painting that I did with some of my fr
   </div>
 </div>
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-black", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-
-	
 <!-- Container -->
 <div class="w3-container" style="position:relative">
   <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
@@ -309,6 +280,34 @@ function showDivs(n) {
 </footer>
 
 <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-black", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+	
 // Script for side navigation
 function w3_open() {
   var x = document.getElementById("mySidebar");
@@ -331,6 +330,8 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+	
 </script>
 
 </body>
