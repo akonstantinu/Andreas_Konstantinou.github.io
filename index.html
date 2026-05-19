@@ -1,15 +1,42 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Andreas Konstantinou Physics</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="google-site-verification" content="26uSr_GZNDtwlkduAZ4ajAzLP_tv601OEDYI0Qvwp_M" />
+  <title>Andreas Konstantinou | Physics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="google-site-verification" content="26uSr_GZNDtwlkduAZ4ajAzLP_tv601OEDYI0Qvwp_M" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { line-height: 1.55; }
+    .hero-spacer { margin-top: 43px; }
+    .paper-carousel-shell { position: relative; }
+    .paper-carousel { display: flex; gap: 18px; overflow-x: auto; scroll-behavior: smooth; padding: 8px 4px 18px 4px; }
+    .paper-carousel::-webkit-scrollbar { height: 10px; }
+    .paper-carousel::-webkit-scrollbar-thumb { background: #b0b0b0; border-radius: 999px; }
+    .paper-card { flex: 0 0 360px; max-width: 360px; display: flex; flex-direction: column; }
+    .paper-card .w3-container { display: flex; flex-direction: column; height: 100%; }
+    .paper-image-wrap { width: 100%; height: 210px; background: #eeeeee; overflow: hidden; display: block; }
+    .paper-image-wrap img { width: 100%; height: 210px; object-fit: cover; display: block; }
+    .paper-image-fallback { width: 100%; height: 210px; display: none; align-items: center; justify-content: center; text-align: center; padding: 16px; background: linear-gradient(135deg, #eeeeee, #d6e5e5); color: #444; font-weight: 600; }
+    .paper-image-fallback span { display: block; margin-top: 6px; font-size: 12px; font-weight: 400; color: #666; }
+    .paper-meta { font-size: 13px; color: #666; margin: 2px 0 10px 0; }
+    .paper-abstract { font-size: 14px; max-height: 260px; overflow-y: auto; padding-right: 6px; }
+    .paper-links { margin-top: auto; padding-top: 12px; }
+    .carousel-button { position: absolute; top: 42%; transform: translateY(-50%); z-index: 1; opacity: 0.92; }
+    .carousel-left { left: -6px; }
+    .carousel-right { right: -6px; }
+    @media (max-width: 600px) { .paper-card { flex-basis: 86vw; max-width: 86vw; } .carousel-button { display: none; } }
+    .tag { display: inline-block; margin: 3px 4px 3px 0; padding: 3px 9px; border-radius: 999px; font-size: 12px; background: #e8f3f3; color: #00695c; }
+    .small-note { font-size: 14px; color: #555; }
+    .youtube-card-icon { font-size: 56px; margin: 28px 0 12px 0; }
+    .mySlides { display:none; }
+    .w3-left, .w3-right, .w3-badge { cursor:pointer; }
+    .w3-badge { height:13px; width:13px; padding:0; }
+    a { word-break: break-word; }
+  </style>
 </head>
 
 <body id="myPage">
@@ -19,233 +46,417 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
     <i class="fa fa-remove"></i>
   </a>
-  <a href="#" class="w3-bar-item w3-button"> For more </a>
-  <a href="#" class="w3-bar-item w3-button"> Stay tuned</a>
-
+  <a href="#particle-physics" class="w3-bar-item w3-button">Particle Physics</a>
+  <a href="#neutron-stars" class="w3-bar-item w3-button">Neutron Star Physics</a>
+  <a href="#work" class="w3-bar-item w3-button">Personal Interests</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
 </nav>
 
 <!-- Navbar -->
 <div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research Outcome</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Personal Interests</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
- </div>
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="#myPage" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+    <a href="#particle-physics" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Particle Physics</a>
+    <a href="#neutron-stars" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Neutron Stars</a>
+    <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Personal Interests</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Research Outcome</a>
+    <a href="#particle-physics" class="w3-bar-item w3-button">Particle Physics</a>
+    <a href="#neutron-stars" class="w3-bar-item w3-button">Neutron Star Physics</a>
     <a href="#work" class="w3-bar-item w3-button">Personal Interests</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
   </div>
 </div>
-</div>
 
-
-<!-- Team Container -->
-
-<div class="w3-row-padding w3-padding-64 w3-white" id="">
-
-<div class="w3-threequarter w3-white">
-<div class="w3-container w3-white">
-<h2>Andreas Konstantinou</h2>
-<p>PhD Student</p>
-			<p>I believe Physics is the most fascinating scientific area. Through the study of the universe someone can develop critical thinking, 
-		        problem solving skills and a better understanding of the world that surrounds us. 
-			This is the reason why I studied at the University of Cyprus and graduated with a Bachelor’s degree in Physics, 
-			where my undergraduate thesis subject was to Search for a charged Higgs boson in the LHC. I got my Master's degree from University of Alberta in Canada. 
-		        My MSc thesis focused on the study of the Rapidly Rotating Neutron Stars, and the better understanding of their 
-		       Equation of State. The main outcome was that the change of the mass and radius of the cold and rigidly rotating neutron 
-		       stars is universal. At the moment I am a PhD student at the University of Cyprus, working on hyperon physics on lattice QCD.</p>
-		    <p> I am mainly interested in the study of Compact Stars, General Relativity, and fundamental physics.
-		I find Neutron Stars magnificent objects as they include all the beautiful fundamental physics laws,
-only within 12 km. For this reason, I would like to learn more about: a) the general relativistic nature
-of NSs, b) the different neutron star EOS models (degenerate fermions (neutrons, protons, electrons) the existence of hyperons, 
-			    the possibility of π and K condensation, and the possibility of having free
-quarks or some other exotic matter), c) the superfluidity and the superconductivity, and how vortices
-are created in the interior of the NSs, d) the phase transition in Nss.</p>
-</div>
-</div>
-
-<div class="w3-quarter w3-white">
-<div class="w3-card">
-  <img src="me.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container">
+<!-- Intro -->
+<div class="w3-row-padding w3-padding-64 w3-white hero-spacer" id="intro">
+  <div class="w3-threequarter w3-white">
+    <div class="w3-container w3-white">
+      <h1>Andreas Konstantinou</h1>
+      <p class="w3-large">PhD Student in Physics | University of Cyprus</p>
+      <p>
+        I am a PhD student in Physics at the University of Cyprus, working on hyperon physics on lattice QCD. My research contains compact-star physics, general relativity, lattice QCD, theoretical and computational physics.
+      </p>
+      <p>
+        I completed my BSc in Physics at the University of Cyprus, where my undergraduate thesis focused on the search for a charged Higgs boson at the LHC. I earned my MSc in Physics from the University of Alberta, where I studied rapidly rotating neutron stars and universal relations for the increase of mass and radius due to rotation.
+      </p>
+      <p>
+        My current interests include compact stars, hyperon physics and lattice QCD.
+      </p>
+      <p>
+        <span class="tag">General Relativity</span>
+        <span class="tag">Neutron Stars</span>
+        <span class="tag">Lattice QCD</span>
+        <span class="tag">Theoretical Physics</span>
+        <span class="tag">Computational Physics</span>
+      </p>
+    </div>
   </div>
+
+  <div class="w3-quarter w3-white">
+    <div class="w3-card">
+      <img src="me.jpg" alt="Portrait of Andreas Konstantinou" style="width:100%">
+    </div>
   </div>
 </div>
 
-</div>
-	
-	
-	
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="team">
-<h2>Research Outcome</h2>
+<!-- Particle physics -->
+<div class="w3-container w3-padding-64 w3-theme-l1" id="particle-physics">
+  <h2>Particle Physics</h2>
+  <p>
+    Collider physics and lattice-QCD work, ordered from the most recent output on the left to earlier projects on the right.
+  </p>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="Screenshot from 2024-02-24 14-10-23.png" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>BSc thesis </h3>
-  <h4>Caption</h4>
-  <p>The goal was to search for the charged Higgs boson in real data in LHC. We assumed that the charged Higgs boson decays as follows: 
-  H^+ -> H^0W^+ ->  l + τ_h + x$. We chose H^+ -> H^0W, as the two-Higgs-doublet model 
-  predicts that this is the process with the larger branching ratio, for masses larger than 300 GeV/c^2 and tanβ=3 
-  (or tanβ=30). We started by simulating the event by using a Monte Carlo simulation. We used the simulated data and reconstructed the event, 
-  pretending that the data came from real detectors. We did that in order to compare our results with the real data from CMS later on. Finally, 
-we used real data from CMS (2016) with integrated luminosity = 35.8 fb^{-1} and 13 TeV center-of-mass energy. Unfortunately, the simulation 
-showed that 86 % of our signal comes from top-antitop background processes. We fitted the transverse mass of the system on the data, 
-by using the background processes and the signal, and we defined how much signal is allowed into the cross section that we chose. </p>
-<a href="https://www.ucy.ac.cy/phy/wp-content/uploads/sites/40/2021/07/AndreasKonstantinou_final1.pdf">Read more (This work is written in Greek).</a> 
+  <div class="paper-carousel-shell">
+    <button class="w3-button w3-teal w3-circle carousel-button carousel-left" onclick="scrollCarousel('particleWorkCarousel', -1)" aria-label="Scroll left">&#10094;</button>
+    <div class="paper-carousel" id="particleWorkCarousel">
 
-  </div>
-  </div>
-</div>
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="paper-2604-16025.jpg" alt="Image for Scalar and Tensor Form Factors for Λ to p l nu from Lattice QCD" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2604-16025.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Under review</span></p>
+          <h3>Scalar and Tensor Form Factors for Λ → pℓν̄ℓ from Lattice QCD</h3>
+          <p class="paper-meta">C. Alexandrou, S. Bacchio, A. Konstantinou, E. Vakana · arXiv:2604.16025 · 2026</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">We present a determination of the scalar and tensor Λ → p transition form factors using lattice QCD. These form factors are relevant for semileptonic hyperon decays in the presence of extensions of the Standard Model that include scalar and tensor interactions. The calculation is carried out using a gauge ensemble of twisted mass fermions at the physical pion mass, following the same strategy as our recent study on vector and axial form factors for the same transition. We provide the complete set of form factors as functions of q² employing a model-independent parametrization. We examine their impact on searches for non-standard charged-current interactions via the muon-to-electron decay-rate ratio R<sup>μe</sup>=Γ(Λ→pμν̄<sub>μ</sub>)/Γ(Λ→peν̄<sub>e</sub>), where scalar and tensor contributions enter linearly and are helicity-enhanced relative to the electron channel. We compare this first-principles prediction for the decay-rate ratio with recent experimental measurements, thereby enabling improved constraints on non-standard charged-current interactions.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2604.16025">arXiv</a></p>
+        </div>
+      </article>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="Screenshot from 2024-01-19 13-39-24.png" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h4>A photo of myself in the LHCb control room, before Run 3 starts (and getting 100% credits for my 0% contribution)</h4>
-  <h3>CERN Summer MSc Studentship 2020 / Muon and electron reconstruction efficiency at LHCb</h3>
-  <h4>Caption</h4>
-  <p>The leptons that are produced in the LHCb (especially the electrons), are "suffering" from
-bremsstrahlung radiation by their interactions with the surrounding material. This leads to a decrease of their
-momentum and scattering, and therefore to fewer tracks into our detectors. As a result, the reconstruction
-of these particles becomes more difficult, and in some cases impossible. In my project we studied how the
-electron and muon reconstruction efficiency changes with respect to the kinematics of the particles, the various
-kinematic cuts and the track types. In real life experiments, the efficiency of the reconstruction algorithms is
-defined according to the tag-and-probe method. However, we can not define a priori which is the proper bin
-size that can be used for the efficiency plots. Therefore, by using simulated data we tried to understand how to
-optimize the bin size, in order to get as much useful information we can, without having low statistics in each
-bin.</p>
-<a href=" https://cds.cern.ch/record/2836380">Read more.</a> 
-  </div>
-  </div>
-</div>
+      <article class="w3-card w3-white paper-card">
+       <!-- <div class="paper-image-wrap">
+          <img src="paper-2602-16560.jpg" alt="Image for Recent results on the Lambda to p l nu semileptonic decay" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2602-16560.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Proceedings</span></p>
+          <h3>Recent results on the Λ → pℓν̄ℓ semileptonic decay</h3>
+          <p class="paper-meta">S. Bacchio, A. Konstantinou · arXiv:2602.16560 · 2026</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">We present a lattice-QCD determination of the Λ → p vector and axial-vector form factors, providing theoretical input for studies of the semileptonic decay Λ → pℓν̄ℓ. The calculation is carried out on a single gauge ensemble with physical light, strange, and charm quark masses and delivers a precise determination of the complete set of transition form factors, including second-class contributions. Using these form factors, we compute decay rates for both the electronic and muonic channels, as well as their ratio, which offers a sensitive test of lepton-flavor universality and possible non-standard scalar or tensor interactions. This decay mode provides a theoretically well-controlled avenue for extracting the CKM matrix element |V<sub>us</sub>| from the baryon sector. Our estimate of |V<sub>us</sub>| is obtained by combining our recent lattice-QCD results with recent measurements of the relevant branching fraction reported by BESIII and LHCb.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2602.16560">arXiv</a></p>
+        </div>
+      </article>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="SeqConstEc.gif" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>MSc Thesis & published paper on NSs Mass and radius change universal relations </h3>
-  <h4>Caption</h4>
-  <p>Rotation causes an increase in a neutron star's mass and equatorial radius. The mass and radius depend 
-  sensitively on the unknown equation of state (EOS) of cold, dense matter. However, the increases in mass and 
-  radius due to rotation are almost independent of the EOS. The EOS independence leads to the idea of neutron star 
-  universality. In this paper, we compute sequences of rotating neutron stars with constant central density. We use 
-  a collection of randomly generated EOSs to construct simple correction factors to the mass and radius computed from 
-  the equations of hydrostatic equilibrium for nonrotating neutron stars. The correction factors depend only on the nonrotating 
-  star's mass and radius and are almost independent of the EOS. This makes it computationally inexpensive to include observations of 
-  rotating neutron stars in EOS inference codes. We also construct a mapping from the measured mass and radius of a rotating neutron star 
-  to a corresponding nonrotating star. The mapping makes it possible to construct a zero-spin mass–radius curve if the masses and radii of 
-  many neutron stars with different spins are measured. We show that the changes in polar and equatorial radii are symmetric, in that the polar 
-  radius shrinks at the same rate in which the equatorial radius grows. This symmetry is related to the observation that the equatorial compactness 
-  (the ratio of mass to radius) is almost constant on one of the constant-density sequences.</p>
-  <a href="https://doi.org/10.7939/r3-tny7-h573">Read my thesis.</a> 
-  <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ac7b86">Read the paper.</a> 
-  </div>
-  </div>
-</div>
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="paper-2507-09970.jpg" alt="Image for Study of the Lambda to p l nu semileptonic decay in lattice QCD" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2507-09970.jpg</span></div>
+        </div> -->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Peer-reviewed article</span></p>
+          <h3>Study of the Λ → pℓν̄ℓ Semileptonic Decay in Lattice QCD</h3>
+          <p class="paper-meta">S. Bacchio, A. Konstantinou · Phys. Rev. Lett. 135, 231901 · arXiv:2507.09970 · 2025</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">We present the first lattice QCD determination of the Λ → N vector and axial-vector form factors, which are essential inputs for studying the semileptonic decay Λ → pℓν̄ℓ. This channel provides a clean, theoretically controlled avenue for extracting the CKM matrix element |V<sub>us</sub>| from the baryon sector. Our analysis uses a gauge ensemble with physical light, strange, and charm quark masses and yields the most precise determination to date of the full set of transition form factors — including second-class contributions — as well as the associated couplings, radii, and the ratio of muon-to-electron decay rates, an observable sensitive to possible non-standard scalar and tensor interactions. We compare our non-perturbative results with next-to-next-to-leading order expansions in the small parameter δ=(m<sub>Λ</sub>−m<sub>N</sub>)/m<sub>Λ</sub>≈0.16. We find that the common phenomenological approximation of neglecting the q²-dependence of the form factors leads to a ~4% deviation in the decay rate. This underscores the critical importance of precise, fully non-perturbative form factor inputs for achieving the sub-percent precision targets of upcoming experimental programs.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2507.09970">arXiv</a> | <a href="https://doi.org/10.1103/bvs9-wcsj">DOI</a></p>
+        </div>
+      </article>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="Screenshot from 2024-02-24 14-41-56.png" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Effects Of Dark Matter Core On The Rotating Neutron Star’s Structural Universal
-Relations</h3>
-  <h4>Caption</h4>
-  <p>Neutron stars represent unique laboratories, offering insights into the physics of supranuclear-density matter 
-  and serving as potential hosts for dark matter. This study explores the impact of dark matter cores on rapidly rotating 
-  neutron stars through the two-fluid approximation, assuming minimal interaction between baryonic matter and dark matter. 
-  The investigation employs phenomenological models for fermionic and bosonic dark matter, revealing that universal relations 
-  governing mass and radius changes due to rotation remain largely unaffected in the presence of a dark matter core. Specifically, 
-  for a 5 % dark matter mass fraction, the percent deviations in total mass (Mtot), the baryonic equatorial radius (RBe), 
-  and polar-to-equatorial baryonic radius ratio (RratioB) are within 3.9 %, 1.8 %, and 1.4 %, respectively. 
-  These findings suggest that the universal relations governing neutron star shape can be utilized to infer constraints on the properties 
-  of dark matter cores even in cases where the dark matter significantly softens the neutron star's equation of state. </p>
-  <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad4701">Read the paper.</a> 
-  </div>
+      <article class="w3-card w3-white paper-card">
+        <div class="paper-image-wrap">
+          <img src="Screenshot from 2024-01-19 13-39-24.png" alt="LHCb control room" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add project image here<span>Screenshot from 2024-01-19 13-39-24.png</span></div>
+        </div>
+        <div class="w3-container w3-padding">
+          <p><span class="tag">CERN Summer Studentship</span></p>
+          <h3>Muon and Electron Reconstruction Efficiency at LHCb</h3>
+          <p class="paper-meta">CERN · 2022</p>
+          <p class="paper-abstract">This project studied how electron and muon reconstruction efficiency changes with the particle kinematics, track types, and kinematic cuts at LHCb. Because electrons lose energy through bremsstrahlung in detector material, reconstruction can become difficult or impossible. Simulated data were used to study how binning choices affect efficiency plots and to optimize the extraction of useful information without creating bins with low statistics.</p>
+          <p class="paper-links"><a href="https://cds.cern.ch/record/2836380">Read the CERN report</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+       <!-- <div class="paper-image-wrap">
+          <img src="Screenshot from 2024-02-24 14-10-23.png" alt="Charged Higgs thesis image" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add project image here<span>Screenshot from 2024-02-24 14-10-23.png</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">BSc thesis</span></p>
+          <h3>Search for a Charged Higgs Boson at the LHC</h3>
+          <p class="paper-meta">University of Cyprus · 2020</p>
+          <p class="paper-abstract">The thesis searched for a charged Higgs boson in LHC data in the channel H<sup>+</sup> → H<sup>0</sup>W<sup>+</sup> → ℓ + τ<sub>h</sub> + x. The work used Monte Carlo simulation, event reconstruction, and CMS 2016 data at 13 TeV with integrated luminosity 35.8 fb<sup>−1</sup>. The analysis compared simulated signal and background processes to data and used transverse-mass fits to constrain the amount of signal allowed by the selected cross section.</p>
+          <p class="paper-links"><a href="https://www.ucy.ac.cy/phy/wp-content/uploads/sites/40/2021/07/AndreasKonstantinou_final1.pdf">Read more</a> <span class="small-note">(Greek)</span></p>
+        </div>
+      </article>
+
+    </div>
+    <button class="w3-button w3-teal w3-circle carousel-button carousel-right" onclick="scrollCarousel('particleWorkCarousel', 1)" aria-label="Scroll right">&#10095;</button>
   </div>
 </div>
 
+<!-- Neutron star physics -->
+<div class="w3-container w3-padding-64 w3-white" id="neutron-stars">
+  <h2>Neutron Star Physics</h2>
+  <p>
+    Compact-star work, ordered from the most recent output on the left to earlier work on the right.
+  </p>
+
+  <div class="paper-carousel-shell">
+    <button class="w3-button w3-teal w3-circle carousel-button carousel-left" onclick="scrollCarousel('neutronWorkCarousel', -1)" aria-label="Scroll left">&#10094;</button>
+    <div class="paper-carousel" id="neutronWorkCarousel">
+
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="paper-2508-18434.jpg" alt="Image for Rotating Neutron Stars with Dark Matter Halos" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2508-18434.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Peer-reviewed article</span></p>
+          <h3>Rotating Neutron Stars with Dark Matter Halos</h3>
+          <p class="paper-meta">S. Shawqi, A. Konstantinou, S. M. Morsink · JCAP 04, 011 · arXiv:2508.18434 · 2026</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">If dark matter exists in halos around rotating neutron stars, it will be essential to understand the effects of rotation on the distribution of dark matter and baryonic matter in the stars to interpret observations. In this work, we construct rapidly rotating dark-matter-admixed neutron stars with dark matter halos using the two-fluid approximation, where the baryonic matter and dark matter interact only through gravity. Our goal is to describe rapidly rotating millisecond-period dark-matter-admixed neutron stars spun up by the accretion of baryonic matter from a zero angular momentum state. We extend the Rapidly Rotating Neutron Star code to compute axisymmetric configurations in which the baryonic matter rotates rigidly while the dark matter remains torque-free and differentially rotates through the frame-dragging of spacetime. For the first time, we examine in detail local and global definitions of mass in general relativity for two-fluid systems, showing how their differences affect the interpretation of baryonic and dark component masses. We compute energy density and frame-dragging frequency profiles for dark-matter-admixed neutron stars with three different characteristic dark matter halos. We demonstrate that rapid baryonic-matter rotation reduces dark matter halo sizes if central energy densities are kept constant between non-rotating and rotating models. We also construct sequences to create mass and radius curves and compare rotating and non-rotating cases. Finally, we quantify deviations in the spacetime metric outside the baryonic surfaces caused by dark matter halos. These results provide a framework for assessing the observational consequences of dark matter halos around rapidly rotating neutron stars.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2508.18434">arXiv</a> | <a href="https://doi.org/10.1088/1475-7516/2026/04/011">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+       <!-- <div class="paper-image-wrap">
+          <img src="paper-2512-12298.jpg" alt="Image for The Effect of a Self-bound Equation of State on the Structure of Rotating Compact Stars" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2512-12298.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Peer-reviewed article</span></p>
+          <h3>The Effect of a Self-bound Equation of State on the Structure of Rotating Compact Stars</h3>
+          <p class="paper-meta">A. Konstantinou · Astrophys. J. 997, 55 · arXiv:2512.12298 · 2026</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">This paper investigates how a self-bound equation of state, which describes strange quark stars, affects the rotational properties of compact stars, focusing on deviations from universal relations governing gravitational mass and radius changes due to rotation. The analysis reveals significant deviations in stars with higher surface-to-center total energy-density ratios, ε<sub>s</sub>/(ε<sub>c</sub>+c²P<sub>c</sub>), challenging the established universal relations. For Newtonian stars, hydrostatic equilibrium ensures that the difference between the gravitational potential at the center, Φ<sub>c</sub>, and at the poles, Φ<sub>p</sub>, remains constant within sequences of rotating neutron stars characterized by the same central and polar specific enthalpy. Combined with the scaling Φ ∝ R<sub>e</sub>², where R<sub>e</sub> denotes the equatorial radius, this condition naturally leads to a quasi-universal behavior in the rotational change of radius within these sequences. Similarly, in general relativistic stars, hydrostatic equilibrium maintains that Φ<sub>p</sub><sup>GR</sup>−Φ<sub>c</sub><sup>GR</sup> remains unchanged within these sequences, where Φ<sup>GR</sup> is one of the metric potentials. Inspired by this theoretical framework, a toy model has been developed to capture the dependence of gravitational mass and radius deviations on the surface-to-central total energy density ratio. Subsequently, an improved set of empirical universal relations has been proposed for accurately modeling rapidly rotating compact stars with self-bound equations of state.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2512.12298">arXiv</a> | <a href="https://doi.org/10.3847/1538-4357/ae2f62">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="paper-2601-13941.jpg" alt="Image for Rotational enhancement and stability of protoquark stars during thermal evolution" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2601-13941.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Under review</span></p>
+          <h3>Rotational Enhancement and Stability of Proto-quark Stars during Thermal Evolution</h3>
+          <p class="paper-meta">A. Issifu, A. Konstantinou, P. Thakur, T. Frederico · arXiv:2601.13941 · 2026</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">We present the first systematic study of rigidly rotating protoquark stars based on isentropic equations of state within the density-dependent quark mass framework. Using a quasi-static equilibrium approach, we follow the Kelvin–Helmholtz evolution from hot, lepton-rich matter to a cold, catalyzed quark star. Rotation substantially enhances the maximum stable mass by up to ~40%, equatorial radius, and key rotational observables, with the ratio of rotational kinetic to gravitational potential energy reaching 0.18–0.19 near the Keplerian limit, indicating a heightened susceptibility to gravitational-wave-emitting instabilities. Thermal evolution introduces a clear ordering: all stellar properties peak during the lepton-rich stages and decrease monotonically as the star cools. Compared to hadronic stars, rotating protoquark stars exhibit larger radii, higher moments of inertia, and stronger quadrupolar deformation, producing a distinct signature in the mass-radius-spin plane that can accommodate objects such as HESS J1731–347 and PSR J0740+6620. These results demonstrate that future multimessenger observations must account for both thermal history and rotation to robustly identify quark matter in compact stars.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2601.13941">arXiv</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+       <!-- <div class="paper-image-wrap">
+          <img src="paper-2511-20477.jpg" alt="Image for Rotational effects in quark stars comparing different models" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2511-20477.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Under review</span></p>
+          <h3>Rotational Effects in Quark Stars: Comparing Different Models</h3>
+          <p class="paper-meta">A. Issifu, A. Konstantinou, F. M. da Silva, T. Frederico · arXiv:2511.20477 · 2025</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">We investigate the rotational properties of self-bound strange quark stars using two representative quark matter equations of state: the vector MIT bag model and the density-dependent quark mass model. Through general-relativistic calculations of uniformly rotating sequences, we analyze their mass-radius relations, moments of inertia, quadrupole moments, surface redshifts, Keplerian frequencies, and energy components. A central result of this work is the full decomposition of the stellar energy budget in rotating strange stars, separating gravitational, internal, rotational, and binding energy contributions. Rotation amplifies the intrinsic equation-of-state differences: the MIT model supports more massive compact stars with larger moments of inertia and greater resistance to deformation, while the density-dependent quark mass model produces larger radii and less massive stars limited by mass-shedding at lower frequencies. Combined measurements of mass, radius, and frequency can thus break the equation-of-state degeneracy; massive, rapidly rotating pulsars favor MIT-like equations of state, whereas larger radii in canonical stars point to a density-dependent quark mass-like model. These rotational observables, soon to be tightly constrained by NICER and next-generation gravitational-wave detectors, offer a means to test the existence and composition of self-bound quark matter in compact stars.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2511.20477">arXiv</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="paper-2507-20823.jpg" alt="Image for Rotating Proto-Neutron Stars Admixed with Mirror Dark Matter" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2507-20823.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Peer-reviewed article</span></p>
+          <h3>Rotating Protoneutron Star Admixed with Mirror Dark Matter: A Two-fluid Approach</h3>
+          <p class="paper-meta">A. Issifu, A. Konstantinou, P. Thakur, T. Frederico · Phys. Rev. D 112, 103026 · arXiv:2507.20823 · 2025</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">This work investigates the impact of mirror dark matter on the global properties of rotating neutron stars across evolutionary stages, from hot, lepton-rich protoneutron stars to cold, catalyzed neutron stars along the Kelvin–Helmholtz timescale. The baryonic matter is modeled using a relativistic mean-field approach with density-dependent couplings, while the dark sector mirrors the visible sector with analogous thermodynamic conditions. Using a two-fluid formalism with purely gravitational dark matter-baryonic matter interaction, we find that rotation enlarges the star, whereas dark matter admixture increases compactness and enhances gravitational stability. However, increased compactness due to dark matter lowers the threshold for rotational instabilities, making dark-matter-admixed stars more susceptible. Rotation decreases central temperature behavior by redistributing thermal energy over a larger volume and reducing central density, while dark matter raises temperatures by deepening the gravitational potential and increasing thermal energy. Stars become more prone to collapse and rotational instabilities as frequency rises and the polar-to-equatorial radius ratio decreases, especially near the Keplerian limit. Dark-matter-admixed stars also show higher surface gravitational redshifts due to their compactness. These findings highlight competing effects of rotation and dark matter on neutron-star thermal evolution, structure, and observables, potentially offering indirect probes of dark matter within neutron stars.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2507.20823">arXiv</a> | <a href="https://doi.org/10.1103/nkc8-yz6x">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="paper-2405-01487.jpg" alt="Image for The Effect of a Dark Matter Core on the Structure of a Rotating Neutron Star" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2405-01487.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Peer-reviewed article</span></p>
+          <h3>The Effect of a Dark Matter Core on the Structure of a Rotating Neutron Star</h3>
+          <p class="paper-meta">A. Konstantinou · Astrophys. J. 968, 83 · arXiv:2405.01487 · 2024</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">Neutron stars represent unique laboratories, offering insights into the physics of supranuclear-density matter and serving as potential hosts for dark matter. This study explores the impact of dark matter cores on rapidly rotating neutron stars through the two-fluid approximation, assuming minimal interaction between baryonic matter and dark matter. The investigation employs phenomenological models for fermionic and bosonic dark matter, revealing that universal relations governing mass and radius changes due to rotation remain largely unaffected in the presence of a dark matter core. Specifically, for a 5% dark matter mass fraction, the percent deviations in total mass, the baryonic equatorial radius, and polar-to-equatorial baryonic radius ratio are within 3.9%, 1.8%, and 1.4%, respectively. These findings suggest that the universal relations governing neutron star shape can be utilized to infer constraints on the properties of dark matter cores even in cases where the dark matter significantly softens the neutron star equation of state.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2405.01487">arXiv</a> | <a href="https://doi.org/10.3847/1538-4357/ad4701">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="paper-2206-12515.jpg" alt="Image for Universal Relations for the Increase in the Mass and Radius of a Rotating Neutron Star" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add paper image here<span>paper-2206-12515.jpg</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">Peer-reviewed article</span></p>
+          <h3>Universal Relations for the Increase in the Mass and Radius of a Rotating Neutron Star</h3>
+          <p class="paper-meta">A. Konstantinou, S. M. Morsink · Astrophys. J. 934, 139 · arXiv:2206.12515 · 2022</p>
+          <p><strong>Abstract</strong></p>
+          <p class="paper-abstract">Rotation causes an increase in a neutron star mass and equatorial radius. The mass and radius depend sensitively on the unknown equation of state of cold, dense matter. However, the increases in mass and radius due to rotation are almost independent of the equation of state. The equation-of-state independence leads to the idea of neutron star universality. In this paper, we compute sequences of rotating neutron stars with constant central density. We use a collection of randomly generated equations of state to construct simple correction factors to the mass and radius computed from the equations of hydrostatic equilibrium for non-rotating neutron stars. The correction factors depend only on the non-rotating star mass and radius and are almost independent of the equation of state. This makes it computationally inexpensive to include observations of rotating neutron stars in equation-of-state inference codes. We also construct a mapping from the measured mass and radius of a rotating neutron star to a corresponding non-rotating star. The mapping makes it possible to construct a zero-spin mass-radius curve if the masses and radii of many neutron stars with different spins are measured. We show that the changes in polar and equatorial radii are symmetric, in that the polar radius shrinks at the same rate that the equatorial radius grows. This symmetry is related to the observation that the equatorial compactness is almost constant on one of the constant-density sequences.</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2206.12515">arXiv</a> | <a href="https://doi.org/10.3847/1538-4357/ac7b86">DOI</a></p>
+        </div>
+      </article>
+
+      <article class="w3-card w3-white paper-card">
+        <!--<div class="paper-image-wrap">
+          <img src="SeqConstEc.gif" alt="Rotating neutron star sequence" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+          <div class="paper-image-fallback">Add thesis image here<span>SeqConstEc.gif</span></div>
+        </div>-->
+        <div class="w3-container w3-padding">
+          <p><span class="tag">MSc thesis</span></p>
+          <h3>Universal Relations for the Increase in the Mass and Radius of a Rotating Neutron Star</h3>
+          <p class="paper-meta">University of Alberta · 2022</p>
+          <p class="paper-abstract">The thesis studied rapidly rotating neutron stars and universal relations for the increase in mass and radius caused by rotation. It showed that the rotational change in mass and radius can be described in a way that is nearly independent of the dense-matter equation of state, making rotating-star corrections more practical for equation-of-state inference.</p>
+          <p class="paper-links"><a href="https://doi.org/10.7939/r3-tny7-h573">Read the MSc thesis</a></p>
+        </div>
+      </article>
+
+    </div>
+    <button class="w3-button w3-teal w3-circle carousel-button carousel-right" onclick="scrollCarousel('neutronWorkCarousel', 1)" aria-label="Scroll right">&#10095;</button>
+  </div>
 </div>
 
-
-<!-- Work Row -->
+<!-- Personal Interests -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-<h2>Personal Interests</h2>
-<p>More than being passionate about studying Physics, I am also interested in learning and doing new stuff. Here is a list of them. 
-The photo at the end of this website is a painting that I did with some of my friends on my grandmother's wall.</p>
+  <h2>Personal Interests</h2>
+  <p>
+    Beyond research, I enjoy science outreach, writing, game design, and creative projects. I currently serve as the National Outreach Coordinator of Cyprus for the International Astronomical Union Office for Astronomy Outreach, in collaboration with the Cyprus Space Exploration Organization.
+  </p>
 
-	
-
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="book.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>Νόσος Των Σκεπτόμενων Δυτών </h3>
-  <h4>Caption</h4>
-  <p>A small book about physics and life (in Greek) [ISBN:978-9925-581-46-7]</p>
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card w3-white">
+      <img src="book.jpg" alt="Book cover" style="width:100%">
+      <div class="w3-container">
+        <h3>Νόσος Των Σκεπτόμενων Δυτών</h3>
+        <p>A small book about physics and life, written in Greek. ISBN: 978-9925-581-46-7.</p>
+      </div>
+    </div>
   </div>
+
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card w3-white">
+      <img src="Logo.png" alt="Lympia Texas Villagers Outlaw logo" style="width:100%">
+      <div class="w3-container">
+        <h3>Lympia Texas Villagers Outlaw</h3>
+        <p>A small video game based on my village, Lympia, Cyprus. Graphics by Evelyn Toumazou.</p>
+        <p><a href="https://akonstan.itch.io/lympia-texas-villagers-outlaw">Play the game online</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card w3-white">
+      <img src="US4.jpg" alt="U.S. του ψουμά sketch" style="width:100%">
+      <div class="w3-container">
+        <h3>pun.igiri</h3>
+        <p>An Instagram page with puns and sketches created by Evelyn Toumazou.</p>
+        <p><a href="https://www.instagram.com/pun.igiri/">Follow us on Instagram</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card w3-white">
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="mySlides" src="gen1.jpg" alt="Physics outreach presentation 1" style="width:100%">
+        <img class="mySlides" src="gen2.jpg" alt="Physics outreach presentation 2" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        </div>
+      </div>
+      <div class="w3-container w3-white">
+        <h3>Physics for General Audiences</h3>
+        <p>
+          I give presentations about the solar system for children and organize annual physics seminars for the general public, with donations supporting the Karaiskakio Foundation.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-quarter w3-margin-bottom">
+    <div class="w3-card w3-white w3-center">
+      <div class="w3-container w3-padding-32">
+        <i class="fa fa-youtube-play youtube-card-icon" aria-hidden="true"></i>
+        <h3>YouTube Channel</h3>
+        <p>Science outreach and public-facing physics content.</p>
+        <p><a href="https://www.youtube.com/@AstroKafeneion">Visit AstroKafeneion</a></p>
+      </div>
+    </div>
   </div>
 </div>
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="Logo.png" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Lympia Texas Villagers Outlaw</h3>
-  <h4>Caption</h4>
-  <p>A small fun video game based on my village Lympia in Cyprus. The graphics are created by Evelyn Toumazou.</p>
-  <a href="https://akonstan.itch.io/lympia-texas-villagers-outlaw">Click Here to play the Game online!</a> 
-  </div>
-  </div>
+
+<!-- Floating action button -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
 </div>
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="US4.jpg" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>U.S. του ψουμά</h3>
-  <h4>Caption</h4>
-  <p>An Instagram page with stupid puns. The sketches are created by Evelyn Toumazou.</p>
-  <a href="https://instagram.com/u_s_tou_psouma?igshid=YmMyMTA2M2Y=">Follow us on Instagram!</a> 
-  </div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m6">
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Information</span></div>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Lympia, Nicosia, Cyprus</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> <a href="mailto:andreas.konstandinu@gmail.com">andreas.konstandinu@gmail.com</a></p>
+      <p><i class="fa fa-github w3-text-teal w3-xlarge"></i> <a href="https://github.com/akonstantinu">github.com/akonstantinu</a></p>
+      <p><i class="fa fa-youtube-play w3-text-teal w3-xlarge"></i> <a href="https://www.youtube.com/@AstroKafeneion">YouTube: AstroKafeneion</a></p>
+    </div>
   </div>
 </div>
 
-<div class="w3-quarter">
-<div class="w3-card w3-white">
+<!-- Image of location/map -->
+<img src="Toixos.jpg" class="w3-image w3-greyscale-min" alt="Wall painting" style="width:100%;">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
-</style>
-<body>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noopener">w3.css</a></p>
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge"><i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
 
-
-
-<div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="gen1.jpg" style="width:100%">
-  <img class="mySlides" src="gen2.jpg" style="width:100%">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>  </div>
-</div>
-	<div class="w3-container w3-white">
-  <h2>Physics for general audience</h2>
-  <p>Time to time, I am invited to do a presentation about our solar system for children (for ages 4 to 12 years old). Also, 
-	  I am organizing and presenting annual talks on physics for the general audience. The purpose of tio events is the economic support of the Karaiskakio Foundation.  </p>
-</div>
 <script>
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function scrollCarousel(id, direction) {
+  var carousel = document.getElementById(id);
+  if (!carousel) return;
+  carousel.scrollBy({ left: direction * 390, behavior: 'smooth' });
+}
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -261,86 +472,18 @@ function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  if (x.length === 0) return;
+  if (n > x.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = x.length; }
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" w3-white", "");
   }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  x[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " w3-white";
 }
-</script>
-
-</body>
-  </div>
-</div>
-
-</div>
-
-
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
-
-
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Information</span></div>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Lympia, Nicosia, CY</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  andreas.konstandinu@gmail.com</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- Image of location/map -->
-<img src="Toixos.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
-
-<script>
-	
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-	
 </script>
 
 </body>
